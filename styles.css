@@ -7,6 +7,11 @@
 html {
     width: 100%;
     height: 100%;
+    zoom: .8;
+}
+
+:root {
+    --font-color: white;
 }
 
 body {
@@ -55,7 +60,7 @@ body {
     background-color: var(--header);
     font-weight: 600;
     font-size: 20px;
-    color: white;
+    color: var(--font-color);
     padding: 15px 50px;
     margin: 0 auto;
     margin-top: 20px;
@@ -81,14 +86,14 @@ body {
     display: flex;
     font-size: 24px;
     flex-flow: column nowrap;
-    color: white;
+    color: var(--font-color);
     height: 100%;
     justify-content: center;
     flex: 1;
 }
 
 .day-wrapper hr {
-    background-color: white;
+    background-color: var(--font-color);
     height: 1px;
     border: none;
 }
@@ -103,6 +108,23 @@ body {
 
 .day-type {
     text-align: center;
+}
+
+
+@media (max-width: 450px) {
+    .header {
+        padding: 0;
+        background-color: transparent;
+    }
+}
+@media (max-height: 160px) {
+    .header {
+        padding: 0;
+        background-color: transparent;
+    }
+    .day-type, .day-wrapper hr {
+        display: none;
+    }
 }
 
 .day {

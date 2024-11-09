@@ -12,7 +12,7 @@ const colors = [
     {
         lighter: "white",
         darker: "whitesmoke",
-        header: "a8a8a8"
+        header: "#a8a8a8"
     },
     {
         lighter: "#2b67c9",
@@ -22,7 +22,7 @@ const colors = [
     {
         lighter: "white",
         darker: "whitesmoke",
-        header: "a8a8a8"
+        header: "#a8a8a8"
     },
     {
         lighter: "#ff6634",
@@ -63,6 +63,10 @@ function updateUI(dayId, data) {
     day.style.setProperty("--lighter", colors[data.codeJour].lighter);
     day.style.setProperty("--darker", colors[data.codeJour].darker);
     day.style.setProperty("--header", colors[data.codeJour].header);
+
+    if (data.codeJour % 2 === 0) {
+        document.documentElement.style.setProperty("--font-color", "black");
+    }
 }
 
 function refresh() {
