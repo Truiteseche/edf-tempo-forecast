@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>EDF jours Tempo</title>
+</head>
+<body>
+    <div id="days-container">
+        <div class="day" id="today">
+            <h2 class="header">Aujourd'hui</h2>
+            <img class="loading" src="/public/images/loading-animation.svg" alt="Ripple animation" title="Chargement...">
+            <div class="day-wrapper hidden">
+                <span class="day-date"><span class="digits"></span> <span class="month"></span> </span>
+                <hr>
+                <span class="day-type"></span>
+            </div>
+        </div>
+        <div class="day" id="tomorrow">
+            <h2 class="header">Demain</h2>
+            <img class="loading" src="/public/images/loading-animation.svg" alt="Ripple animation" title="Chargement...">
+            <div class="day-wrapper hidden">
+                <span class="day-date"><span class="digits"></span> <span class="month"></span> </span>
+                <hr>
+                <span class="day-type"></span>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
