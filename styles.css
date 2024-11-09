@@ -11,7 +11,7 @@ html {
 }
 
 :root {
-    --font-color: white;
+    --font-color: black;
 }
 
 body {
@@ -60,7 +60,7 @@ body {
     background-color: var(--header);
     font-weight: 600;
     font-size: 20px;
-    color: var(--font-color);
+    color: white;
     padding: 15px 50px;
     margin: 0 auto;
     margin-top: 20px;
@@ -115,9 +115,13 @@ body {
     .header {
         padding: 0;
         background-color: transparent;
+        color: var(--font-color);
     }
 }
 @media (max-height: 160px) {
+    .day {
+        --header: transparent !important;
+    }
     .header {
         padding: 0;
         background-color: transparent;

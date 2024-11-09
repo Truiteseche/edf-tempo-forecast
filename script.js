@@ -64,8 +64,8 @@ function updateUI(dayId, data) {
     day.style.setProperty("--darker", colors[data.codeJour].darker);
     day.style.setProperty("--header", colors[data.codeJour].header);
 
-    if (data.codeJour % 2 === 0) {
-        document.documentElement.style.setProperty("--font-color", "black");
+    if (data.codeJour % 2 === 1) {
+        document.documentElement.style.setProperty("--font-color", "white");
     }
 }
 
