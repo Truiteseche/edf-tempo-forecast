@@ -10,9 +10,9 @@ const dayTypes = [
 ]
 const colors = [
     {
-        lighter: "white",
-        darker: "whitesmoke",
-        header: "#a8a8a8"
+        lighter: "black",
+        darker: "#262626",
+        header: "#4c4c4c"
     },
     {
         lighter: "#2b67c9",
@@ -64,14 +64,14 @@ function updateUI(dayId, data) {
     day.style.setProperty("--darker", colors[data.codeJour].darker);
     day.style.setProperty("--header", colors[data.codeJour].header);
 
-    if (data.codeJour % 2 === 1) {
-        document.documentElement.style.setProperty("--font-color", "white");
+    if (data.codeJour === 2) {
+        day.style.setProperty("--font-color", "black");
     }
 }
 
 function refresh() {
     fetchTempoDay("today")
-        .then((data) => {console.log("data:", data); updateUI("today", data)});
+        .then((data) => updateUI("today", data));
     fetchTempoDay("tomorrow")
         .then((data) => updateUI("tomorrow", data));
 }

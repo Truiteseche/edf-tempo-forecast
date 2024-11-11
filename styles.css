@@ -10,10 +10,6 @@ html {
     zoom: .8;
 }
 
-:root {
-    --font-color: black;
-}
-
 body {
     background-color: white;
     width: 100%;
@@ -36,6 +32,7 @@ body {
 }
 
 .day {
+    --font-color: white;
     --lighter: white;
     --darker: whitesmoke;
     --header: #a8a8a8;
