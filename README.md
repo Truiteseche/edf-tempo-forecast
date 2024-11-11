@@ -24,7 +24,12 @@ git clone https://github.com/your-username/edf-tempo-forecast.git
 
 ## Usage
 
-Once embedded, the application displays EDF Tempo day types for the upcoming days (Blue, White, Red), providing insight into daily electricity rates.
+Once embedded, the application displays EDF Tempo day types for the upcoming days (see below), providing insight into daily electricity rates :
+
+1. **Black** : the color of the day has not been defined yet
+2. **Blue** : 40% savings on the price of electricity (peak hours)
+3. **White** : up to 30% savings on electricity prices (peak hours)
+4. **Red** : the price of kWh during peak hours is up to 2.8 times higher
 
 ## Contributing
 
